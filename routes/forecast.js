@@ -58,7 +58,7 @@ router.get("/:city", async (req, res, next) => {
 		const { data: cityLocationData } = await getCityLocation(city)
 		location = cityLocationData
 	} catch (err) {
-		return next(handleError(500, err, codeErrors.WEATHER_API_GET_CITY_LOCATION_ERROR))
+		return next(handleError(err.response.status || 500, err, codeErrors.WEATHER_API_GET_CITY_LOCATION_ERROR))
 	}
 	try {
 		const { data: weatherData } = await getForecastWeather(`?lat=${location.coord.lat}&lon=${location.coord.lon}`)
