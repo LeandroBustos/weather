@@ -4,7 +4,8 @@ An API that consult the current weather or forecast the weather in the next 5 da
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables to your .env file.
+Check `.env.example` for an example.
 
 | Parameter                  | Type     | Description                                                                                 |
 | :------------------------- | :------- | :------------------------------------------------------------------------------------------ |
