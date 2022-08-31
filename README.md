@@ -59,7 +59,7 @@ To run tests, run the following command
 #### Get current or selected city location and weather info
 
 ```http
-  GET /current/${city}
+  GET /v1/current/${city}
 ```
 
 | Parameter | Type     | Description                          |
@@ -69,7 +69,7 @@ To run tests, run the following command
 #### Get current or selected city location and weather forecast of 5 days info
 
 ```http
-  GET /forecast/${city}
+  GET /v1/forecast/${city}
 ```
 
 | Parameter | Type     | Description                          |
